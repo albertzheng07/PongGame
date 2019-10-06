@@ -19,10 +19,31 @@ void Game::Run(Renderer &renderer,
     frame_start = SDL_GetTicks();
 
     // Input, Update, Render - the main game loop.
-    pong.input(running);
-    Update();
+    bool left_score = false;
+    bool right_score = false;    
+    // if reset is set, wait 1 sec before running again
+    if ( (frame_start-resetTime) > 1000)
+    {
+      pong.input(running);
+      Update(left_score, right_score);
+    }  
     renderer.Render(pong);
 
+    // trigger reset for all objects (pause for a sec) if ball is past either paddle,
+    // tell pong to update score
+    if (left_score)
+    {
+        score1 += 1;
+    }
+    else if (right_score)
+    {
+        score2 += 1;
+    }
+    if (left_score || right_score)
+    {
+        pong.reset();
+        resetTime = SDL_GetTicks();
+    }
     frame_end = SDL_GetTicks();
 
     // Keep track of how long each loop through the input/update/render cycle
@@ -46,6 +67,6 @@ void Game::Run(Renderer &renderer,
   }
 }
 
-void Game::Update() {
-  pong.update();
+void Game::Update(bool & left_score, bool & right_score) {
+  pong.update(left_score, right_score);
 }

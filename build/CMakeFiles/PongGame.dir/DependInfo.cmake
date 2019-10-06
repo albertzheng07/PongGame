@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/albert/Project/PongGame/src/ball.cpp" "/home/albert/Project/PongGame/build/CMakeFiles/PongGame.dir/src/ball.cpp.o"
   "/home/albert/Project/PongGame/src/game.cpp" "/home/albert/Project/PongGame/build/CMakeFiles/PongGame.dir/src/game.cpp.o"
   "/home/albert/Project/PongGame/src/main.cpp" "/home/albert/Project/PongGame/build/CMakeFiles/PongGame.dir/src/main.cpp.o"
   "/home/albert/Project/PongGame/src/paddle.cpp" "/home/albert/Project/PongGame/build/CMakeFiles/PongGame.dir/src/paddle.cpp.o"

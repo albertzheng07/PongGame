@@ -123,6 +123,33 @@ PongGame/fast:
 	$(MAKE) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/build
 .PHONY : PongGame/fast
 
+src/ball.o: src/ball.cpp.o
+
+.PHONY : src/ball.o
+
+# target to build an object file
+src/ball.cpp.o:
+	$(MAKE) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/src/ball.cpp.o
+.PHONY : src/ball.cpp.o
+
+src/ball.i: src/ball.cpp.i
+
+.PHONY : src/ball.i
+
+# target to preprocess a source file
+src/ball.cpp.i:
+	$(MAKE) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/src/ball.cpp.i
+.PHONY : src/ball.cpp.i
+
+src/ball.s: src/ball.cpp.s
+
+.PHONY : src/ball.s
+
+# target to generate assembly for a file
+src/ball.cpp.s:
+	$(MAKE) -f CMakeFiles/PongGame.dir/build.make CMakeFiles/PongGame.dir/src/ball.cpp.s
+.PHONY : src/ball.cpp.s
+
 src/game.o: src/game.cpp.o
 
 .PHONY : src/game.o
@@ -267,6 +294,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... PongGame"
+	@echo "... src/ball.o"
+	@echo "... src/ball.i"
+	@echo "... src/ball.s"
 	@echo "... src/game.o"
 	@echo "... src/game.i"
 	@echo "... src/game.s"

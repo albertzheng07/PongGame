@@ -6,21 +6,45 @@
 
 #IncludeRegexTransform: 
 
+/home/albert/Project/PongGame/src/ball.h
+SDL.h
+/home/albert/Project/PongGame/src/SDL.h
+paddle.h
 /home/albert/Project/PongGame/src/paddle.h
+
+/home/albert/Project/PongGame/src/game.cpp
+game.h
+/home/albert/Project/PongGame/src/game.h
+iostream
+-
 SDL.h
 /home/albert/Project/PongGame/src/SDL.h
 
-/home/albert/Project/PongGame/src/pong.cpp
-pong.h
-/home/albert/Project/PongGame/src/pong.h
+/home/albert/Project/PongGame/src/game.h
 SDL.h
 /home/albert/Project/PongGame/src/SDL.h
-iostream
--
+renderer.h
+/home/albert/Project/PongGame/src/renderer.h
+pong.h
+/home/albert/Project/PongGame/src/pong.h
+
+/home/albert/Project/PongGame/src/paddle.h
+SDL.h
+/home/albert/Project/PongGame/src/SDL.h
 
 /home/albert/Project/PongGame/src/pong.h
 paddle.h
 /home/albert/Project/PongGame/src/paddle.h
+ball.h
+/home/albert/Project/PongGame/src/ball.h
+
+/home/albert/Project/PongGame/src/renderer.h
+vector
+-
+SDL.h
+/home/albert/Project/PongGame/src/SDL.h
+pong.h
+/home/albert/Project/PongGame/src/pong.h
 
 /usr/include/SDL2/SDL.h
 SDL_main.h

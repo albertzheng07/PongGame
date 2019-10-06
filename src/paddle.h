@@ -12,9 +12,13 @@ class Paddle
         Paddle();
         Paddle(Type type, int x, int y);
 
-        void handle_input(bool &running);
-        void update(double dt);
-        SDL_Rect getPosition() { return m_position; }
+        void handle_input(SDL_Event &e);
+        void update(double grid_h);
+        void reset(int x, int y);
+        const SDL_Rect* getPosition() { return &m_position; }
+        Direction getDirection() { return m_direction; }
+        Type      getType() { return m_type; }
+        double      getMy() { return m_y; }
 
     private:
         double m_y;
