@@ -1,3 +1,0 @@
-/home/albert/Project/PongGame/build/CMakeFiles/edit_cache.dir
-/home/albert/Project/PongGame/build/CMakeFiles/rebuild_cache.dir
-/home/albert/Project/PongGame/build/CMakeFiles/PongGame.dir

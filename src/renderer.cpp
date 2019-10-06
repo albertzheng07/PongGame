@@ -43,26 +43,21 @@ void Renderer::Render(Pong & pong) {
   SDL_SetRenderDrawColor(sdl_renderer, 0x1E, 0x1E, 0x1E, 0xFF);
   SDL_RenderClear(sdl_renderer);
 
-  // SDL_Rect left_pad_pos = pong.left_paddle.getPosition();
-  // const SDL_Rect *rect1  = &left_pad_pos;
 
-  const SDL_Rect *rect1  = pong.left_paddle.getPosition();
   /* Draw Paddle Left */
+  const SDL_Rect *rect1  = pong.left_paddle.getPosition();
   SDL_SetRenderDrawColor(sdl_renderer, 255, 255, 255, 255);
   SDL_RenderFillRect(sdl_renderer, rect1);
   SDL_SetRenderDrawColor(sdl_renderer, 0, 0, 0, 255);
 
-  // SDL_Rect right_pad_pos = pong.right_paddle.getPosition();
-  // const SDL_Rect *rect2  = &right_pad_pos;
-  const SDL_Rect *rect2  = pong.right_paddle.getPosition();  
   /* Draw Paddle Right */
+  const SDL_Rect *rect2  = pong.right_paddle.getPosition();  
   SDL_SetRenderDrawColor(sdl_renderer, 255, 255, 255, 255);
   SDL_RenderFillRect(sdl_renderer, rect2);
   SDL_SetRenderDrawColor(sdl_renderer, 0, 0, 0, 255);
 
-  // SDL_Rect ball_pos = pong.ball.getPosition();
+  /* Draw Ball */
   const SDL_Rect *rect3  = pong.ball.getPosition();
-  // /* Draw Ball */
   SDL_SetRenderDrawColor(sdl_renderer, 255, 255, 255, 255);
   SDL_RenderFillRect(sdl_renderer, rect3);
   SDL_SetRenderDrawColor(sdl_renderer, 0, 0, 0, 255); 

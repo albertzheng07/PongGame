@@ -55,10 +55,6 @@ void Paddle::handle_input(SDL_Event &e)
 
 void Paddle::update(double grid_h)
 {
-    //   std::cout << "Type" << (int)m_type << "\n"; 
-    //   std::cout << "Direction" << (int)m_direction << "\n";  
-    //   std::cout << "Position Y" << m_position.y << "\n"; 
-
     if(m_direction == Direction::UP)
     {
         m_y = m_y - 10;
@@ -67,8 +63,6 @@ void Paddle::update(double grid_h)
             m_y = 0;
         }     
         m_position.y = m_y;
-    //   std::cout << "Type" << (int)m_type << "\n"; 
-    //   std::cout << "Position Y" << m_position.y << "\n"; 
     }
     else if(m_direction == Direction::DOWN)
     {

@@ -12,6 +12,6 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 find_package(SDL2 REQUIRED)
 include_directories(${SDL2_INCLUDE_DIRS} src)
 
-add_executable(PongGame src/main.cpp src/renderer.cpp src/game.cpp src/pong.cpp src/paddle.cpp)
+add_executable(PongGame src/main.cpp src/renderer.cpp src/game.cpp src/pong.cpp src/paddle.cpp src/ball.cpp)
 string(STRIP ${SDL2_LIBRARIES} SDL2_LIBRARIES)
 target_link_libraries(PongGame ${SDL2_LIBRARIES})
